@@ -1,0 +1,206 @@
+body {
+    font-family: "Bree Serif", serif;
+    background-color: #E8DBF9;
+    color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    color: black;
+    border-radius: 1.5em;
+    height: 5rem;
+    
+    flex-direction: column;
+    
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav{
+    display: flex;
+    font-size: 1em;
+    width: 100%;
+    align-content: space-around;
+   
+}
+
+.navbar{
+    height: 5rem;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header a, header a:hover {
+    color: black;
+}
+
+#logoPokemon {
+    max-width: 10rem;
+    max-height: 6rem;
+}
+
+/* color type of pokemon **/
+
+#Feu {
+    background-color: #FDDFDF;
+}
+#Plante {
+    background-color: #DEFDE0;
+}
+#Électrik {
+    background-color: #FCF7DE;
+}
+
+#Eau {
+    background-color: #DEF3FD;
+}
+#Sol {
+    background-color: #f4e7da;
+}
+#Roche {
+    background-color: #d5d5d4;
+}
+#Poison {
+    background-color: #98d7a5;
+}
+#Insecte {
+    background-color: #f8d5a3;
+}
+#Dragon {
+    background-color: #97b3e6;
+}
+#Psy {
+    background-color: #eaeda1;
+}
+#Vol {
+    background-color: #F5F5F5;
+}
+#Combat {
+    background-color: #E6E0D4;
+}
+#Normal {
+    background-color: #F5F5F5;
+}
+#Spectre {
+    background-color: #fceaff;
+}
+#Ténèbres {
+    background-color: #fceaff;
+}
+#Acier {
+    background-color: #F5F5F5;
+}
+
+/* body */
+
+.reset-list{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.error .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error h2{
+    font-size: 10em;
+}
+
+.error p{
+    font-size: 2em;
+}
+
+.error img{
+    width:100%;
+}
+
+/* POKEMON LIST */
+
+.pokemon-list a{
+    text-decoration: none;
+}
+
+.pokemon-list figure{
+    border-radius: 1.5em;
+    background-color: #d2c2e6;
+    color: black;
+    text-align: center;
+}
+
+.pokemon-list img{
+    width:100%;
+}
+
+/* TYPE LIST */
+
+.type-list a{
+    display: block;
+    text-decoration: none;
+    color: #E6CCFB;
+    text-align: center;
+    border-radius: 1em;
+}
+
+/* Fiche */
+
+.pokemon-detail .fiche{
+    background-color:  #E6CCFB;
+    border-radius: 1em;
+}
+
+.pokemon-detail .type-list a{
+    font-size: 0.8em;
+}
+
+.pokemon-detail .image img{
+    width:100%;
+}
+
+.pokemon-detail .stats{
+    font-size:0.9em;
+}
+
+.pokemon-detail .stats .row{
+    margin-bottom: 0.3em;
+}
+
+.pokemon-detail .stats .status-bar{
+    width: 100%;
+    background-color: White;
+    height:1.3em;
+}
+.pokemon-detail .stats .status-bar span{
+    display: block;
+    height:1.3em;
+    background-color: rgb(226, 115, 115);
+}
+
+.pokemon-detail footer {
+    line-height:4em;
+}
+
+.pokemon-detail footer a{
+    color: #F9D2D3;
+}
+
+
+
+
+
+
+

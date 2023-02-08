@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+<ul class="type-list reset-list row">
+    <% for(const type of typeList) { %>
+    <li class="p-2 col-lg-2">
+        <a href="/type/<%=type.id%>" class="p-3" style="background-color: #<%=type.color%>">
+            <%=type.name%>
+        </a>
+    </li>
+    <% } %>
+</ul>
+<%- include('partials/footer') %>

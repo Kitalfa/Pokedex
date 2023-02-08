@@ -1,0 +1,81 @@
+<%- include('partials/header') %>
+<section class="pokemon-detail row">
+    <div class="col-lg-12">
+        <div class="container-fluid">
+            <header class="row">
+                <h2 class="col-lg-12 text-center text-black mb-3">Détails de <%=nom%></h2>
+            </header>
+            <main class="row">
+                <div class="col-lg-4 image">
+                    <img src="/img/<%=numero%>.png">
+                </div>
+                <div class="col-lg-8 fiche p-3">
+                    <h3 class="mt-4">#<%=numero%> <%=nom%></h3>
+                    <ul class="type-list reset-list d-inline-flex mt-2 mb-3">
+                        <% for(const type of typeList) { %>
+                        <li><a href="/type/<%=type.id%>" class="rounded d-block mr-2 p-2"
+                                style="background-color: #<%=type.color%>"><%=type.name%></a></li>
+                        <% } %>
+                    </ul>
+                    <h4 class="mb-4">Statistiques</h4>
+
+                    <div class="stats container-fluid.no-gutters mb-4">
+
+                        <div class="row">
+                            <div class="col-2">PV</div>
+                            <div class="col-2"><%=pv%></div>
+                            <div class="col-8">
+                                <div class="status-bar rounded overflow-hidden"><span
+                                        style="width:<%=(pv/255)*100%>%"></span></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">Attaque</div>
+                            <div class="col-2"><%=attaque%></div>
+                            <div class="col-8">
+                                <div class="status-bar rounded overflow-hidden"><span
+                                        style="width:<%=(attaque/255)*100%>%"></span></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">Défense</div>
+                            <div class="col-2"><%=defense%></div>
+                            <div class="col-8">
+                                <div class="status-bar rounded overflow-hidden"><span
+                                        style="width:<%=(defense/255)*100%>%"></span></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">Attaque Spé.</div>
+                            <div class="col-2"><%=attaque_spe%></div>
+                            <div class="col-8">
+                                <div class="status-bar rounded overflow-hidden"><span
+                                        style="width:<%=(attaque_spe/255)*100%>%"></span></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">Défense Spé.</div>
+                            <div class="col-2"><%=defense_spe%></div>
+                            <div class="col-8">
+                                <div class="status-bar rounded overflow-hidden"><span
+                                        style="width:<%=(defense_spe/255)*100%>%"></span></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">Vitesse</div>
+                            <div class="col-2"><%=vitesse%></div>
+                            <div class="col-8">
+                                <div class="status-bar rounded overflow-hidden"><span
+                                        style="width:<%=(vitesse/255)*100%>%"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="text-center">
+                <a href="/">Revenir à la liste</a>
+            </footer>
+        </div>
+    </div>
+</section>
+<%- include('partials/footer') %>
