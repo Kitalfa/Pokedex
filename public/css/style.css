@@ -164,7 +164,13 @@ header a, header a:hover {
 .pokemon-detail .fiche{
     background-color:  #ede0cb;
     border-radius: 1em;
+    padding: 3rem;
 }
+
+.fiche h3 {
+    text-align: center;
+}
+
 
 .pokemon-detail .type-list a{
     font-size: 0.8em;
