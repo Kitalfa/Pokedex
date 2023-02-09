@@ -1,6 +1,6 @@
 body {
     font-family: "Bree Serif", serif;
-    background-color: #E8DBF9;
+    background-color: #FEFEE2;
     color: black;
 }
 
@@ -13,6 +13,9 @@ header {
     
     flex-direction: column;
     
+}
+.firstHeader {    
+    background-color: #ede0cb;       
 }
 
 header h1 {
@@ -137,7 +140,7 @@ header a, header a:hover {
 
 .pokemon-list figure{
     border-radius: 1.5em;
-    background-color: #d2c2e6;
+    background-color: #ede0cb;
     color: black;
     text-align: center;
 }
@@ -151,7 +154,7 @@ header a, header a:hover {
 .type-list a{
     display: block;
     text-decoration: none;
-    color: #E6CCFB;
+    color: black;
     text-align: center;
     border-radius: 1em;
 }
@@ -159,12 +162,13 @@ header a, header a:hover {
 /* Fiche */
 
 .pokemon-detail .fiche{
-    background-color:  #E6CCFB;
+    background-color:  #ede0cb;
     border-radius: 1em;
 }
 
 .pokemon-detail .type-list a{
     font-size: 0.8em;
+    color: black;
 }
 
 .pokemon-detail .image img{

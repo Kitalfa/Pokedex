@@ -54,7 +54,7 @@ const mainController = {
             delete pokemon.name, pokemon.color;
             delete pokemon.color;
 
-            console.log(pokemon);
+            
 
             response.render('detail', pokemon);
         });
