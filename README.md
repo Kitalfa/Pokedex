@@ -18,6 +18,11 @@
 
 `psql -U numUtilisateur -d nomBaseDeDonnees -f pokedex.sql`
 
+- Renseigner le fichier .env.example
+
+Ajouter le nomDeLutilisateur, motDePasse,nomDeLaDataBase dans l'url de connection à la base de données.
+Supprimer le .example
+
 - Lancer le serveur 
   
 `nodemon index.js`
